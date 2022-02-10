@@ -2,11 +2,11 @@ from math import floor
 from const import ranks
 
 class player:
-    def __init__(self, name, rank):
+    def __init__(self, name, rank,team="None"):
         self.name = name
         self.rank = rank
         self.value = ranks[rank]
-    
+        self.team = team
 
     def print_player(self):
         print("Name:",self.name,"\tRank:",self.rank)
@@ -31,7 +31,7 @@ class team:
             player.print_player()
 
     def get_average(self):
-        self.average = sum(p.value for p in self.players) /5
+        self.average = sum(p.value for p in self.players) /len(self.players)
         self.rank = get_key_from_value(ranks,floor(self.average))
         return self.rank
 

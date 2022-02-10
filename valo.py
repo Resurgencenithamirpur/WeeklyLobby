@@ -16,11 +16,27 @@ def make_teams(ranked,ind):
         switch = not switch
     return team1,team2
 
+def premade_teams(premade):
+    teams = []
+    team_names = []
+    for player in premade:
+        if player.team not in team_names:
+            t1 = team(player.team)
+            t1.add_player(player)
+            teams.append(t1)
+            team_names.append(t1.name)
+        else:
+            for t in teams:
+                if t.name ==player.team:
+                    t.add_player(player)
+    return teams
 
 def make_bracket():
-    players = generate(39)
-    #players = get_players()
+    #players = generate(39)
+    all_players = get_players()
  #   players.extend(genplayers)
+    premade_players = [p for p in all_players if p.team!="None"]
+    players = [p for p in all_players if p.team=="None"]
     ranked = sorted(players, key = lambda i: i.value,reverse=True)
     teams = []
     noteams = int(len(ranked)/5)
@@ -28,6 +44,9 @@ def make_bracket():
         team1,team2 = make_teams(ranked,i)
         teams.append(team1)
         teams.append(team2)
+    premade = premade_teams(premade_players)
+    teams.extend(premade)
+
     for p in teams:
         p.print_team()
     check_errors(teams,ranked)
