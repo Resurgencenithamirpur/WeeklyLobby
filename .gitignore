@@ -1,5 +1,3 @@
 *.ipynb
 __pycache__
-*csv
-*xls
-*xlsx
+WeeklyLobby.csv
