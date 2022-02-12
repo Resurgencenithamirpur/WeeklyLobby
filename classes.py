@@ -21,9 +21,9 @@ class team:
 
     def add_player(self,player):
         self.players.append(player)
+        self.get_average()
 
     def print_team(self):
-        self.get_average()
         print("\n\n","="*5,self.name,"="*5)
         print("Team Average: ",self.rank)
         print("PLAYERS: ")

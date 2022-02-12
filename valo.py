@@ -31,10 +31,25 @@ def premade_teams(premade):
                     t.add_player(player)
     return teams
 
-def make_bracket():
-    #players = generate(39)
+def make_fixture(teams):
+    disparity = 0
+    paired_teams = []
+    ranked_teams = sorted(teams, key = lambda i: i.average,reverse=True)
+    for i in range(0,len(ranked_teams)-1,2):
+        team_pairs = []
+        team_pairs.append(ranked_teams[i].name)
+        team_pairs.append(ranked_teams[i+1].name)
+        disparity = disparity+(ranked_teams[i].average-ranked_teams[i+1].average)
+        paired_teams.append(team_pairs)
+    disparity = disparity/len(paired_teams)
+    if len(ranked_teams)%2:
+        return paired_teams,disparity,ranked_teams[len(ranked_teams)-1]
+    return paired_teams,disparity,[]
+
+def main():
+    #genplayers = generate(39)
     all_players = get_players()
- #   players.extend(genplayers)
+   # all_players.extend(genplayers)
     premade_players = [p for p in all_players if p.team!="None"]
     players = [p for p in all_players if p.team=="None"]
     ranked = sorted(players, key = lambda i: i.value,reverse=True)
@@ -50,6 +65,10 @@ def make_bracket():
     for p in teams:
         p.print_team()
     check_errors(teams,ranked)
+    paired_teams,disparity,unpaired= make_fixture(teams)
+    print("\nPaired Teams: ",paired_teams)
+    print("Disparity: ",disparity,"(must be <=3)")
+    print("Unpaired Teams: ",unpaired)
 
 def check_errors(teams,ranked):
     print("\nLeft players:")
@@ -65,4 +84,4 @@ def check_errors(teams,ranked):
             print(t.name)
 
 if __name__ == '__main__':
-    make_bracket()
+    main()
