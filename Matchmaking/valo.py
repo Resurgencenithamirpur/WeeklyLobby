@@ -1,3 +1,4 @@
+from more_itertools import last
 from playergen import generate
 from read_csv import get_players
 from classes import team
@@ -15,6 +16,14 @@ def make_teams(ranked,ind):
         ranked.remove(play)
         switch = not switch
     return team1,team2
+
+def left_players(ranked):
+    t =team("Team Final")
+    for i in range(len(ranked)):
+        t.add_player(ranked[i])
+    ranked.clear()
+    return t
+
 
 def premade_teams(premade):
     teams = []
@@ -61,7 +70,10 @@ def main():
         teams.append(team2)
     premade = premade_teams(premade_players)
     teams.extend(premade)
-
+    #left players
+    if len(ranked)>0 and len(ranked)<=5:
+        last_team = left_players(ranked)
+        teams.append(last_team)
     for p in teams:
         p.print_team()
     check_errors(teams,ranked)
