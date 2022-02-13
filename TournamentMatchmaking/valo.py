@@ -1,7 +1,11 @@
-from more_itertools import last
-from playergen import generate
 from read_csv import get_players
-from classes import team
+import sys
+sys.path.append("..")
+  
+# import method from sibling
+# module
+from Matchmaking.classes import team
+
 
 def make_teams(ranked,ind):
     team1 =team("Team "+str(ind+1))
