@@ -2,12 +2,14 @@ from math import floor
 from const import ranks
 
 class player:
-    def __init__(self, name, rank,username,team="None"):
+    def __init__(self, name, rank,username,discord="None",number="None",team="None"):
         self.name = name
         self.rank = rank
         self.value = ranks[rank]
         self.team = team
         self.username = username
+        self.discord = discord
+        self.number = number
 
     def print_player(self):
         print("Name:",self.name,"\tRank:",self.rank,'\tUsername: ',self.username)

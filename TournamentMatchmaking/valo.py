@@ -1,12 +1,14 @@
+from operator import index
 from read_csv import get_players
 import sys
 sys.path.append("..")
   
+import pandas as pd
 # import method from sibling
 # module
 from Matchmaking.classes import team
 
-
+"""
 def make_teams(ranked,ind):
     team1 =team("Team "+str(ind+1))
     team2 =team("Team "+str(ind+2))
@@ -20,6 +22,19 @@ def make_teams(ranked,ind):
         ranked.remove(play)
         switch = not switch
     return team1,team2
+"""
+def make_teams(ranked,ind):
+    team1 =team("Team "+str(ind+1))
+    team2 =team("Team "+str(ind+2))
+
+    for play in ranked[:5]:
+            team1.add_player(play)
+            ranked.remove(play)
+
+    for play in ranked[:5]:
+            team2.add_player(play)
+            ranked.remove(play)
+    return team1,team2    
 
 def left_players(ranked):
     t =team("Team Final")
@@ -85,6 +100,7 @@ def main():
         teams.append(team1)
         teams.append(team2)
     premade = premade_teams(premade_players,subs)
+    to_csv(teams)
     #teams.extend(premade)
     #left players
     if len(ranked)>0 and len(ranked)<=5:
@@ -98,6 +114,22 @@ def main():
     print("\nPaired Teams: ",paired_teams)
     print("Disparity: ",disparity,"(must be <=3)")
     print("Unpaired Teams: ",unpaired)
+
+
+def to_csv(teams):
+    columns = ['Name','Discord Username','WhatsApp Number','Valorant Rank','username','Team Name']
+    df = pd.DataFrame(columns=columns)
+    for t in teams:
+        for p in t.players:
+            df2 = {'Name':p.name,
+            'Discord Username':p.discord,
+            'WhatsApp Number':p.number,
+            'Valorant Rank':p.rank,
+            'username':p.username,
+            'Team Name':p.team}
+            df.append(df2,ignore_index=True)
+    df.to_csv('out.csv',index=[0])
+
 
 def check_errors(teams,ranked):
     print("\nLeft players:")
