@@ -12,8 +12,9 @@ from Matchmaking.classes import player
 def get_players():
     df = pd.read_csv('Lobby.csv')
     players = []
+    subs = []
     for row in df.iterrows():
-        rank = row[1]['Valorant Rank(if Solo) / Average Team Rank(if in team)'].lower()
+        rank = str(row[1]['Valorant Rank(if Solo) / Average Team Rank(if in team)']).lower()
  
         if row[1]['Do you have a team?'] =="Yes":
             tname = row[1]['Team Name ( enter “solo” if no team ) ']
@@ -24,6 +25,11 @@ def get_players():
                 plays = player(row[1]['Member '+str(i)],rank,username=row[1]['Member '+str(i)])
                 plays.team = tname
                 players.append(plays)
-
-
-    return players
+            for i in range(1,3):
+                sub = player(row[1]['Substitute '+str(i)],rank,username=row[1]['Substitute '+str(i)])
+                sub.team = tname
+                subs.append(sub)
+        else:
+            play = player(row[1]['Name'],rank,username=row[1]['Member 1 (Leader Riot ID and tag)'])
+            players.append(play)
+    return players,subs

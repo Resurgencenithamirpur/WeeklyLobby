@@ -1,9 +1,42 @@
-Timestamp,Name,Discord Username ,WhatsApp Number ,Do you have a team?,Team Name ( enter “solo” if no team ) ,Valorant Rank(if Solo) / Average Team Rank(if in team),Member 1 (Leader Riot ID and tag),Member 2,Member 3,Member 4,Member 5
-2/11/2022 21:27:21,Kashish Srivastava,cannibalcheeseburger,7018242486,Yes,RaMu,Silver 1,cannibalcheese #3570,Exolit #litaf,fut1le #sad,kstbhbhatt #3308,mach1ne #4522
-2/12/2022 16:04:25,Farhat Firoz,Ferbe722#0402,+966558679511,No,Solo,Silver 3,Ferbe722#722,,,,
-2/12/2022 17:17:35,Aniket,Aniket,7018805297,No,Solo,Iron 1,#5958,,,,
-2/12/2022 19:25:23,Mohammed sajal,Sajal#0434,7560964001,No,Solo,Iron 2,Kageyama #7282,,,,
-2/12/2022 19:48:59,Shubhanu Goel,Blaze#6435,7457892599,Yes,Wild Wolves,Diamond 2,Cursed Oggy#0208,Sweet Cookie Cat#drunk,PR1CE#5292,DestiOn60hz#440,Quanta#1487
-2/12/2022 22:19:20,Amrit Kalra,AgentAk#4262,8006846665,Yes,KAIZEN,Diamond 3,KZ DYNO Tv#IGL,KZ AgentAk#エース,KZ Xeno#piro,KZ OPM埼玉#ONE,KZ ShiderZ#Q73T
-2/12/2022 23:07:18,Amitaanshu Midha,Diavel #2728,7522001166,Yes,chotu,Silver 3,Diavel #69420,GONゴン #hunt,altofalt #neo,Mr Outlaw #2720,KiTe #hunt
-2/12/2022 23:11:22,Amitaanshu Midha,Diavel #2728,7522001166,Yes,master baiters,Silver 3,Diavel #69420,altofalt #neo,Mr Outlaw #2720,GONゴン #hunt,KiTe #hunt
+Timestamp,Name,Discord Username ,WhatsApp Number ,Do you have a team?,Team Name ( enter “solo” if no team ) ,Valorant Rank(if Solo) / Average Team Rank(if in team),Member 1 (Leader Riot ID and tag),Member 2,Member 3,Member 4,Member 5,Substitute 1,Substitute 2
+2/11/2022 21:27:21,Kashish Srivastava,cannibalcheeseburger,7018242486,Yes,RaMu,Silver 1,cannibalcheese #3570,Exolit #litaf,fut1le #sad,kstbhbhatt #3308,mach1ne #4522,,
+2/12/2022 16:04:25,Farhat Firoz,Ferbe722#0402,+966558679511,No,Solo,Silver 3,Ferbe722#722,,,,,,
+2/12/2022 17:17:35,Aniket,Aniket,7018805297,No,Solo,Iron 1,#5958,,,,,,
+2/12/2022 19:48:59,Shubhanu Goel,Blaze#6435,7457892599,Yes,Wild Wolves,Diamond 2,Cursed Oggy#0208,Sweet Cookie Cat#drunk,PR1CE#5292,DestiOn60hz#440,Quanta#1487,,
+2/12/2022 22:19:20,Amrit Kalra,AgentAk#4262,8006846665,Yes,KAIZEN,Diamond 3,KZ DYNO Tv#IGL,KZ AgentAk#エース,KZ Xeno#piro,KZ OPM埼玉#ONE,KZ ShiderZ#Q73T,,
+2/12/2022 23:11:22,Amitaanshu Midha,Diavel #2728,7522001166,Yes,master baiters,Silver 3,Diavel #69420,altofalt #neo,Mr Outlaw #2720,GONゴン #hunt,KiTe #hunt,,
+2/13/2022 9:40:00,Yash Master,DRACULA#0769,7990277120,Yes,Team Mavericks,Diamond 3,MAV DRACULA#6916,MAV W1NT3R#2034,MAV ELECTRAS#HADES,MAV MeTaLLz#coach,Krispyy#chicken,,
+2/13/2022 13:12:40,Pranay Sankpal,gunner#4349,9137797408,No,solo,Platinum 2,69gunner#2104,,,,,,
+2/13/2022 16:26:43,Jay Sutrave,FatBatman#4791,8208123267,No,solo,Diamond 1,fatbatman#robin,,,,,,
+2/13/2022 20:33:47,Sonu Kumar,07Seenu,9882576569,Yes,AKATSUKI,Iron 3,KONAN#1796,ArmarosX#2816,BUGGER#foxy,MNKSenpai#1348,BuG#GOAT,,
+2/14/2022 0:07:04,Arun kumar,Hunter_,9805935441,Yes,smolPP,Bronze 1,hunter#smlPP,Bombolone#9413,Adrak#5647,nucleaphile#ehe,w4rm4chine#5573,,
+2/14/2022 0:08:14,Prosenjit Kumar Ghosh,Pr0F- #3233,9903744374,Yes,Terror Squad,Diamond 1,TS D3MON #IND,TS CoAcH #4519,TS ShezZ #1820,TS RavenGold #2876,TS Tace #Gamer,,
+2/14/2022 3:26:37,Siddhant,KillerRayuga#8899,9689561212,Yes,Amigos Esports,Immortal 3,AES GrEEnY #puff,AES JuzO #bruh,AES Zaps #1770,AES Pochita#LEWU,AES R0nnie #2176,,
+2/15/2022 3:00:06,Abisheik Barathan,Klude#4553,7397728828,Yes,Team Solid,Gold 1,Klude#2003,Vizhodhan#1221,INVO#6969,WyteFlow#Hell,Sukuna#1443,,
+2/15/2022 12:27:29,Ateesh Dipankar,XG Sky#1719,8984110204,Yes,X Gravity eSports,Immortal 2,XG Clown#IND,XG Soocide #69420,asdf#3456,XG dhanesh #LFT,XG Frostic #8105,,
+2/15/2022 14:01:44,CosmicAsura,Cosmic Asura#7151,7013119422,Yes,Psyzor Esports,Diamond 3,RxP Guardian YT#2012,RxP FuxT#6771,RxP r1shi#0000,e11eVn#1960,RxP yuk1#drlin,bangz#001,CosmicAsura#GYT
+2/15/2022 15:57:43,Aryan Mahana,NightMare#5370,9319805997,Yes,ROG Academy,Immortal 2,ROG NightMare#9528,ROG Cruiser #420,ROG GauRanG #masti,ROG feitan#VIVID,ROG VISI0N#420,ROG Infflicks #000,babypsy#0302
+2/15/2022 17:14:45,leshivu,MrZ leshivu#9016,8891023837,Yes,MrZ,Immortal 3,MRZ Axis#nive	Axis_#1888,MRZ CAUTI0N #MrZ	MrZ Cauti0n #1796,MRZ Rude #1337	neu #2773,MRZ mind #FUQU2	       MindfuQ#6611,MRZ fuzeyRR#FUQ	fuze#1873,MRZ kheltuzad#love	khelthuzad #9069,
+2/16/2022 13:00:42,Vasav Sriram,ChomuLaal#5104,8897278557,Yes,Autolock Esports,Immortal 1,ALE ChomuLaal#kunju,ALE  JACK420 YT#LOVE,Minnal Murali#lol,ALE raing0d#simp,ALE RoZeKiNg#roze,WTFHAHAHAHAAHA#swag,
+2/16/2022 18:10:32,krishna dangi,RSD FROLIC # 0733,8828462595,Yes,RISING DESTINY (RSD),Silver 3,RSD FROLIC #3004,RitZ #Help,nachos #F IT,dior #flex,RSD TYPHOON #RSDOP,RSD Anky #1833,
+2/17/2022 0:00:06,Siddhant Jagtap,KillerRayuga#8899,9689561212,Yes,Amigos Esports,Immortal 2,AES GrEEnY #puff,AES Zaps #1770,AES Pochita#LEWU,AES JuzO #bruh, AES R0nnie #2176, AES insi#6342,AES KillerRyuga#1212
+2/17/2022 10:45:14,Vatsal Shobhana,MasterLord #2628,9409754488,No,Solo,Platinum 1,UniK MaaterLord #DEATH,,,,,,
+2/17/2022 12:51:39,Else,Assasin,9882054317,No,Solo,Silver 2,ELSE #2675,,,,,,
+2/17/2022 12:53:29,Manish,GrizZlYxYT#0805,8982119115,Yes,The Void,Gold 2,GrizZlYxYT #GrizZ,J U N Λ Í Đ #FKYOU,Lauda XD #TROLL,Potato the aaloo #sabzi,Lag Ho Gaya Yrr #Ping,unknown26 #3809,
+2/17/2022 18:16:43,Surya Chowdhury,Dominator,9674085019,Yes,GCS,Bronze 3,GCSxSRC #INDIA,GCSxVENOM,GCSxSUVO,TTRxD,Swaglie,,
+2/18/2022 15:19:02,Gorank,Go7#3217,9138231510,No,Solo,Platinum 3,GoSvn#6969,,,,,,
+2/18/2022 19:45:19,DEUS,Assasin,7018164951,No,Solo,Silver 2,DEUS #5314,,,,,,
+2/18/2022 23:34:36,Anshita Gupta,Mazikeen#1216,6395018086,Yes,L Streak,Immortal 1,zzz#bsbsb,UJッッッッッ#MxD ,zondA #BeasT ,CVL Spree#001 ,Alluka#ENXFD ,Zonea#Lft,
+2/19/2022 1:24:07,Nihal Singh,NihalCODM#0748,8076969751,Yes,Nalla Squad,Bronze 2,RDK战士 #6858,CarNagE #OPP,Squadron #bot,Wowbruh #2638,TACAZ #4869,Sabotage #5490,SCARbot #thik
+2/19/2022 2:03:58,Prateek Kumar Gupta ,Prateek#2199,7050445799,Yes,TEAM XHIBIT ,Gold 3,MAXFURY#DEAD,SPiDY#000X,arienox#S3XY,DemenTor#d3ath,BihariSova#5150,MAXFURY#ALIVE,
+2/19/2022 3:22:41,Mohit Kumar,M KAY #3281,8091776298,No,solo,Iron 1,M Kay #027,,,,,,
+2/19/2022 12:55:41,Saksham Agrawal,Luc1#5053,7976911566,Yes,Team Astra,Immortal 3,TA DEATHUNTER#6602,TA NekO#xel,TA Aninxs#cbs,TA Egoist#AIMER,TA Storch#42069,Luc1fer#5053,TA Bobby#ind
+2/19/2022 13:56:53,Mohammed sajal,Sajal,7560964001,No,Solo,Iron 2,kageyama #7282,,,,,,
+2/19/2022 13:58:05,Abhinav Shukla,CeLtOs#1175,9335622688,Yes,Optimistic eSports,Radiant,OE VaiByGoD#5987,OE Immutable#bisht,OE Kawaii#Zt1,Fox#aaloo,LFT ayaNq#jinx,Ludraadaddy#ez4me,OE CeLtOs#JODDD
+2/19/2022 14:53:41,Vaibhav,WARRIOR#9840,9418666800,No,Solo,Bronze 2,MAZAK13 #LGND,,,,,,
+2/19/2022 15:02:01,prem kashid,prem Kashid#4431,9665032051,Yes,OTLW ONE,Platinum 1,O1  sNeaKy#6969,O1 XeNo#IND,O1 OsmGuy #O1IND,O1 RoboXfer#999,Ex1sTenZ #XRGB,O1 47#047,O1 Lasthope#0359
+2/19/2022 15:46:51,Vineet Kaundal,LALIT#4965,8219102568,Yes,WeNoobs,Silver 1,Dracarys#1862,SCISSOR 7 #SEVEN,AKATSUKI SASUKE #0I0I0,midoriyaop#1481,DEATHxMESSENGER#7309,,
+2/19/2022 15:47:00,Navish Monga,Navish#6632,9779180356,No,solo,Platinum 3,m0nga#3862,,,,,,
+2/19/2022 16:51:08,Pudding,Pudding#2343,+8801765077830,Yes,Haphazard,Gold 1,Pudding#Po3,1applecrisp#1968,TROLL#404,GlichPoP#1234,Theangrybird #abz4,,
+2/19/2022 17:40:36,Shashank Hemmadi,Shanks#7042,9699240043,Yes,Zenith,Platinum 3,Zen Shanks#IGL,Zen nasH#4321, Zen thesheriff10 #wggle,Zen CrackShot#PEPEG,Simon#Vzn,Zen DarthBr0din#Br0,Knull#5406
+2/19/2022 18:43:34,Anupam Anand,WHIS#7994,9918074093,Yes,MARCH,Iron 3,WHIS#7114,Botman#8437,PrimalAssassinYT#0000,kuchnahi#7957,Blizzard23011998#1266,,

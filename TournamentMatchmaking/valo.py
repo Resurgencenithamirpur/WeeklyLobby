@@ -29,7 +29,7 @@ def left_players(ranked):
     return t
 
 
-def premade_teams(premade):
+def premade_teams(premade,subs):
     teams = []
     team_names = []
     for player in premade:
@@ -42,6 +42,13 @@ def premade_teams(premade):
             for t in teams:
                 if t.name ==player.team:
                     t.add_player(player)
+
+    for sub in subs:
+        if player.team not in team_names:
+            t1 = team(sub.team)
+            t1.add_sub(sub)
+            teams.append(t1)
+            team_names.append(t1.name)
     return teams
 
 def make_fixture(teams):
@@ -61,14 +68,15 @@ def make_fixture(teams):
 
 def main():
     #genplayers = generate(39)
-    all_players = get_players()
+    all_players,subs = get_players()
    # all_players.extend(genplayers)
     premade_players = [p for p in all_players if p.team!="None"]
     players = [p for p in all_players if p.team=="None"]
     ranked = sorted(players, key = lambda i: i.value,reverse=True)
+    print("Solo: ",len(ranked))
+
     teams = []
     noteams = int(len(ranked)/5)
-    print("ranked: ",len(ranked))
     print("noteams: ",noteams)
     if noteams%2:
         noteams-=1
@@ -76,14 +84,15 @@ def main():
         team1,team2 = make_teams(ranked,i)
         teams.append(team1)
         teams.append(team2)
-    premade = premade_teams(premade_players)
-    teams.extend(premade)
+    premade = premade_teams(premade_players,subs)
+    #teams.extend(premade)
     #left players
     if len(ranked)>0 and len(ranked)<=5:
         last_team = left_players(ranked)
         teams.append(last_team)
     for p in teams:
         p.print_team()
+    print("\nTotal Teams: ",len(teams))
     check_errors(teams,ranked)
     paired_teams,disparity,unpaired= make_fixture(teams)
     print("\nPaired Teams: ",paired_teams)
