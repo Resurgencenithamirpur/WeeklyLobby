@@ -2,7 +2,7 @@ from operator import index
 from read_csv import get_players
 import sys
 sys.path.append("..")
-  
+import json
 import pandas as pd
 # import method from sibling
 # module
@@ -38,6 +38,7 @@ def make_teams(ranked,ind):
 
 def left_players(ranked):
     t =team("Team Final")
+    
     for i in range(len(ranked)):
         t.add_player(ranked[i])
     ranked.clear()
@@ -100,8 +101,7 @@ def main():
         teams.append(team1)
         teams.append(team2)
     premade = premade_teams(premade_players,subs)
-    to_csv(teams)
-    #teams.extend(premade)
+    teams.extend(premade)
     #left players
     if len(ranked)>0 and len(ranked)<=5:
         last_team = left_players(ranked)
@@ -112,9 +112,26 @@ def main():
     check_errors(teams,ranked)
     paired_teams,disparity,unpaired= make_fixture(teams)
     print("\nPaired Teams: ",paired_teams)
-    print("Disparity: ",disparity,"(must be <=3)")
-    print("Unpaired Teams: ",unpaired)
+    print("\nDisparity: ",disparity,"(must be <=3)")
+    print("\nUnpaired Teams: ",unpaired)
+    to_json(paired_teams)
 
+def to_json(paired_teams):
+    out = []
+    tim = '05:00pm'
+    date = '12/12/42'
+    i = 0
+    for pair in paired_teams:
+        match = {'match':i,
+                'team1':pair[0],
+                 'team2':pair[1],
+                 'time':tim,
+                'date': date
+        }
+        i= i+1
+        out.append(match)
+    with open('final.json','w') as f:
+        json.dump(out,f)
 
 def to_csv(teams):
     columns = ['Name','Discord Username','WhatsApp Number','Valorant Rank','username','Team Name']
